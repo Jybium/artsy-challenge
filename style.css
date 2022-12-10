@@ -17,10 +17,56 @@ body{
 main{
     font-family: 'clash-display';
 }
+
+header{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header li a, .icon{
+    display: flex;
+    text-decoration: none;
+    margin: 0px 20px;
+    color: black;
+    gap: 20px;
+    transition: all 2s ease;
+
+}
+ 
+.menu{
+    display: none;
+}
+
+
+.top-word{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.top-word h2{   
+    font-size: 50px;
+    font-weight: 1000;
+    padding: 6% 20% 2% 20%;
+}
+.top-word p{
+    font-size: 20px;
+    padding: 0% 20%;
+    font-weight: 400;
+}
 .carousel{
     display: flex;
     /* width: 95%;
     margin: auto; */
+    margin: 1% 0;
     gap: 1%;
 }
 .slider{
@@ -73,6 +119,7 @@ main{
     gap: 5%;
     padding:40px 0px;
     margin-top: 20px;
+    width: 100%;
     border-top: 1px solid black;
 }
 
@@ -80,7 +127,9 @@ main{
     width: 80%;
     margin: 70px auto;
 }
-
+.image img{
+    width: 100%;
+}
 .reverse{
     flex-direction: row-reverse;
 }
@@ -88,6 +137,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
+    font-size: 19px;
 }
 
 
@@ -113,10 +164,14 @@ main{
     margin-left: 15px;
 }
 .arrow{
-    padding: 5px 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
     border: 1px solid rgb(138, 134, 134);
     border-radius: 100%;
 }
 .arrow span{
     font-size: 22px;
 }
+
+
